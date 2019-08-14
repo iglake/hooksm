@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head>
+<!--script src=js/showdown.min.js><script!-->
+<meta charset="utf8">
+<link href="https://cdn.statically.io/gh/iglake/cssjs/master/css/style.css" rel="stylesheet" type="text/css"/>
+<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<style>
+body {
+ /*
+ background-image: URL(https://cloudflare-ipfs.com/ipfs/uAXAALhIoChgBcBEUuxlKGtU-AvGCGUNFe85m1ja0AB4SCGJsdWUuanBnGP6yAgoCCAE/blue.jpg);
+ background-image: URL(https://cdn.statically.io/img/gateway.ipfs.io/ipfs/uAXAALhIoChgBcBEUuxlKGtU-AvGCGUNFe85m1ja0AB4SCGJsdWUuanBnGP6yAgoCCAE/blue.jpg);
+  */
+  background-image: URL({{site.static}}{{site.backimg}});
+  background-size: cover;
+}
+</style>
+</head><body>
+
+<div id=first class=content>
+<h1>{{ site.title }}</h1>
+<p><i>{{ site.description }}</i></p>
+</div><br>
+<div class=content>
+ {{ content }}
+</div>
+
+<br>--&nbsp;<br>your ip: <span class=ip>0.0.0.0</span>
+</body>
+<script src="/js/myip.js"></script>
+</html>

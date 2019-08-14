@@ -1,0 +1,7 @@
+--- # cpannel deployment file
+# see also [*](https://documentation.cpanel.net/display/CKB/Guide+to+Git+-+Deployment)
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/iggy/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
