@@ -1,8 +1,8 @@
 #
 
-find . -name \*.org -delete
+find . -type f -name \*.org -delete
 jekyll build
-rsync -avz --delete-delay _site/* _dist/
+rsync -avz --delete-delay _site/* _dist/hooksm.ml/
 
 #scp -rp -P 1373 _site/* iglake@johnny.heliohost.org:public_html/
 #rsync -avz -e "ssh  -p 1373 -l iglake" --delete-delay _site/* johnny.heliohost.org:public_html/
